@@ -126,7 +126,7 @@ export function ServicesSection() {
 
                 {/* CTA */}
                 <Button asChild className="w-full bg-primary hover:bg-primary/90 text-text-primary-foreground py-3 text-base font-medium">
-                  <Link href={service.href}>
+                  <Link href='contact'>
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -139,7 +139,7 @@ export function ServicesSection() {
         {/* View All Services CTA */}
         <div className="text-center mt-16">
           <Button size="lg" variant="outline" asChild className="px-8 py-4 text-lg bg-transparent">
-            <Link href="#services">
+            <Link href="services">
               View All Services
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

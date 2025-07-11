@@ -5,7 +5,6 @@ import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
-import { ColorThemeToggle } from "@/components/color-theme-toggle"
 import SmoothScroll from "@/providers/lenis-provider"
 
 const inter = Inter({
@@ -57,7 +56,6 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <ColorThemeToggle />
         </ThemeProvider>
       </body>
     </html>

@@ -4,8 +4,13 @@ import Link from "next/link"
 import Image from "next/image"
 
 export function HeroSection() {
+
+
+
+
+
   return (
-    <section className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-background-subtle via-background to-background-subtle dark:from-background-emphasis dark:via-background-emphasis dark:to-background-subtle overflow-hidden">
+    <section id="solutions" className="relative pt-20 pb-20 lg:pt-32 lg:pb-32 bg-gradient-to-br from-background-subtle via-background to-background-subtle dark:from-background-emphasis dark:via-background-emphasis dark:to-background-subtle overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-gray-100 dark:bg-grid-gray-800 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.05))]" />
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12">
@@ -20,7 +25,7 @@ export function HeroSection() {
           {/* Content */}
           <div className="lg:col-span-7 xl:col-span-6">
             {/* Trust Badge */}
-            <div className="inline-flex items-center px-4 py-2 bg-background dark:bg-background-subtle rounded-full shadow-sm border border-border dark:border-border-subtle mb-8">
+            {/* <div className="inline-flex items-center px-4 py-2 bg-background dark:bg-background-subtle rounded-full shadow-sm border border-border dark:border-border-subtle mb-8">
               <div className="flex items-center space-x-3">
                 <div className="flex -space-x-1">
                   {[...Array(5)].map((_, i) => (
@@ -29,7 +34,7 @@ export function HeroSection() {
                 </div>
                 <span className="text-sm font-medium text-text-secondary dark:text-text-tertiary">Trusted by 200+ companies</span>
               </div>
-            </div>
+            </div> */}
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-space-grotesk font-bold text-text-primary dark:text-text-primary leading-tight mb-6">
               Healthcare
@@ -95,7 +100,7 @@ export function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6">
+            {/* <div className="grid grid-cols-3 gap-6">
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-text-primary dark:text-text-primary mb-1">100+</div>
                 <div className="text-sm text-text-secondary dark:text-text-tertiary">Medical practices served</div>
@@ -108,7 +113,7 @@ export function HeroSection() {
                 <div className="text-3xl font-bold text-text-primary dark:text-text-primary mb-1">24/7</div>
                 <div className="text-sm text-text-secondary dark:text-text-tertiary">Medical IT support</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Hero Visual */}

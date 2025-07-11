@@ -475,66 +475,7 @@ export default function WebDevelopmentClientPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="py-20 lg:py-24 bg-background-subtle dark:bg-background-subtle">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-space-grotesk font-bold text-text-primary dark:text-text-primary mb-6">
-            Investment Options
-          </h2>
-          <p className="text-xl text-text-secondary dark:text-text-secondary max-w-3xl mx-auto">
-            Flexible pricing to match your project scope and business requirements.
-          </p>
-          </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {pricingTiers.map((tier, index) => (
-              <div
-                key={index}
-                className={`relative bg-background dark:bg-background-emphasis rounded-2xl border-2 p-8 ${
-                  tier.popular
-                    ? "border-primary shadow-2xl scale-105"
-                    : "border-border dark:border-border-subtle hover:border-primary/30"
-                } transition-all duration-300`}
-              >
-                {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-primary text-text-primary-foreground px-6 py-2 rounded-full text-sm font-semibold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-space-grotesk font-bold text-text-primary dark:text-text-primary mb-2">
-                    {tier.name}
-                  </h3>
-                  <div className="text-3xl font-bold text-primary mb-2">{tier.price}</div>
-                  <p className="text-text-secondary dark:text-text-secondary">{tier.description}</p>
-                </div>
-
-                <ul className="space-y-4 mb-8">
-                  {tier.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center">
-                      <CheckCircle className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                      <span className="text-text-secondary dark:text-text-secondary">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button
-                  asChild
-                  className={`w-full py-3 ${
-                    tier.popular
-                      ? "bg-primary hover:bg-primary/90 text-text-primary-foreground"
-                      : "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-text-primary-foreground"
-                  }`}
-                >
-                  <Link href="#contact">Get Started</Link>
-                </Button>
-              </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 lg:py-24 bg-primary text-text-primary-foreground">
