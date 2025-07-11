@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "About MedTech Solutions | Healthcare IT Specialists",
+  title: "About SRIXUS  Solutions | Healthcare IT Specialists",
   description: "Learn about our team of healthcare IT specialists dedicated to transforming medical practices.",
 }
 
@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="py-20 bg-background-subtle">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-space-grotesk font-bold text-text-primary mb-6">About MedTech Solutions</h1>
+            <h1 className="text-4xl font-space-grotesk font-bold text-text-primary mb-6">About SRIXUS  Solutions</h1>
             <p className="text-xl text-text-secondary">
               We're healthcare IT specialists dedicated to transforming medical practices through technology.
             </p>

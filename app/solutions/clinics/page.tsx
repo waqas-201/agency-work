@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Multi-Location Clinic Solutions | MedTech Solutions",
+  title: "Multi-Location Clinic Solutions | SRIXUS  Solutions",
   description: "Healthcare IT solutions for multi-location clinics and medical groups.",
 }
 

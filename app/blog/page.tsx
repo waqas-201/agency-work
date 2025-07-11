@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Healthcare IT Blog | MedTech Solutions",
+  title: "Healthcare IT Blog | SRIXUS  Solutions",
   description: "Latest insights on healthcare technology, HIPAA compliance, and practice optimization.",
 }
 

@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "HIPAA Compliance | MedTech Solutions",
+  title: "HIPAA Compliance | SRIXUS  Solutions",
   description: "Learn about our HIPAA-compliant development practices and security measures.",
 }
 

@@ -26,13 +26,13 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "MedTech Solutions - Healthcare Web Development for Medical Practices",
+  title: "SRIXUS Solutions - Healthcare Web Development for Medical Practices",
   description:
     "HIPAA-compliant web solutions for doctors, clinics, and healthcare organizations. Patient portals, practice management, and telemedicine platforms.",
   keywords:
-    "healthcare web development, patient portal, practice management, telemedicine, HIPAA compliant, medical software, MedTech Solutions",
+    "healthcare web development, patient portal, practice management, telemedicine, HIPAA compliant, medical software, SRIXUS  Solutions",
   openGraph: {
-    title: "MedTech Solutions - Healthcare Web Development for Medical Practices",
+    title: "SRIXUS  Solutions - Healthcare Web Development for Medical Practices",
     description: "HIPAA-compliant web solutions that improve patient care and practice efficiency.",
     type: "website",
   },

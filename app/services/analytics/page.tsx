@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Healthcare Analytics | MedTech Solutions",
+  title: "Healthcare Analytics | SRIXUS  Solutions",
   description: "Advanced healthcare analytics and reporting solutions for medical practices.",
 }
 

@@ -7,14 +7,14 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/medtech-solutions" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com/medtechsolutions" },
-    { name: "GitHub", icon: Github, href: "https://github.com/medtech-solutions" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/SRIXUS -solutions" },
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/SRIXUS solutions" },
+    { name: "GitHub", icon: Github, href: "https://github.com/SRIXUS -solutions" },
   ]
 
   const contactInfo = [
     { icon: Phone, label: "Sales", value: "+1 (555) MED-TECH", href: "tel:+15556338324" },
-    { icon: Mail, label: "Inquiries", value: "healthcare@medtechsolutions.com", href: "mailto:healthcare@medtechsolutions.com" },
+    { icon: Mail, label: "Inquiries", value: "healthcare@SRIXUS solutions.com", href: "mailto:healthcare@SRIXUS solutions.com" },
     { icon: MapPin, label: "Location", value: "Medical District, TX", href: "/contact#locations" },
   ]
 
@@ -108,7 +108,7 @@ export function Footer() {
         <div className="border-t border-border-subtle pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center">
             <p className="text-text-tertiary text-center lg:text-left">
-              © {currentYear} MedTech Solutions, Inc. All rights reserved.
+              © {currentYear} SRIXUS  Solutions, Inc. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 lg:mt-0">
               {legalLinks.map((link, index) => (

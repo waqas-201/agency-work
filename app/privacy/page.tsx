@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy | MedTech Solutions",
+  title: "Privacy Policy | SRIXUS  Solutions",
   description: "Our privacy policy and commitment to protecting healthcare data.",
 }
 
@@ -13,7 +13,7 @@ export default function PrivacyPage() {
             <p className="text-text-secondary mb-4">Last updated: {new Date().toLocaleDateString()}</p>
             <div className="space-y-6 text-text-secondary">
               <p>
-                MedTech Solutions is committed to protecting the privacy and security of healthcare data. This privacy
+                SRIXUS  Solutions is committed to protecting the privacy and security of healthcare data. This privacy
                 policy outlines how we collect, use, and protect information in compliance with HIPAA regulations.
               </p>
 

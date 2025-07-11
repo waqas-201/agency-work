@@ -51,7 +51,7 @@ export default function PracticeManagementClientPage() {
   const testimonials = [
     {
       quote:
-        "Our practice management system from MedTech has streamlined every aspect of our operations. We've seen a 40% reduction in administrative time.",
+        "Our practice management system from SRIXUS  has streamlined every aspect of our operations. We've seen a 40% reduction in administrative time.",
       author: "Dr. Jennifer Walsh",
       role: "Practice Owner",
       practice: "Family Health Center",

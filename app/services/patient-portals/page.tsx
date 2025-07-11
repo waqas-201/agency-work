@@ -14,7 +14,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 export const metadata = {
-  title: "Patient Portal Development | MedTech Solutions",
+  title: "Patient Portal Development | SRIXUS  Solutions",
   description:
     "HIPAA-compliant patient portals for secure appointment scheduling, medical records access, and patient communication.",
 }

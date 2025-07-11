@@ -1,7 +1,7 @@
 import PracticeManagementClientPage from "./PracticeManagementClientPage"
 
 export const metadata = {
-  title: "Practice Management Systems | MedTech Solutions",
+  title: "Practice Management Systems | SRIXUS  Solutions",
   description: "Complete practice management solutions for scheduling, billing, and patient management.",
 }
 

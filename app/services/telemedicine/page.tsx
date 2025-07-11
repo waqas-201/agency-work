@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Telemedicine Platform Development | MedTech Solutions",
+  title: "Telemedicine Platform Development | SRIXUS  Solutions",
   description: "HIPAA-compliant telemedicine platforms for remote patient consultations and care.",
 }
 

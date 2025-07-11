@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Terms of Service | MedTech Solutions",
-  description: "Terms of service for MedTech Solutions healthcare IT services.",
+  title: "Terms of Service | SRIXUS  Solutions",
+  description: "Terms of service for SRIXUS  Solutions healthcare IT services.",
 }
 
 export default function TermsPage() {
@@ -13,7 +13,7 @@ export default function TermsPage() {
             <p className="text-text-secondary mb-4">Last updated: {new Date().toLocaleDateString()}</p>
             <div className="space-y-6 text-text-secondary">
               <p>
-                These terms of service govern your use of MedTech Solutions healthcare IT services and applications.
+                These terms of service govern your use of SRIXUS  Solutions healthcare IT services and applications.
               </p>
 
               <h2 className="text-xl font-semibold text-text-primary">Service Agreement</h2>

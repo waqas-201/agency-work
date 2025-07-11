@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Healthcare Case Studies | MedTech Solutions",
+  title: "Healthcare Case Studies | SRIXUS  Solutions",
   description: "Real-world examples of how we've helped medical practices improve with technology solutions.",
 }
 

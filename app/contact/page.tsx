@@ -2,7 +2,7 @@ import { ContactForm } from "@/components/contact-form"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export const metadata = {
-  title: "Contact MedTech Solutions - Healthcare IT Consultation",
+  title: "Contact SRIXUS  Solutions - Healthcare IT Consultation",
   description:
     "Ready to modernize your medical practice? Get in touch with our healthcare IT team for a free consultation.",
 }
@@ -17,7 +17,7 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Medical Inquiries",
-      details: ["healthcare@medtechsolutions.com"],
+      details: ["healthcare@SRIXUS solutions.com"],
     },
     {
       icon: MapPin,
