@@ -126,6 +126,7 @@ export function Header() {
           <div className="hidden lg:flex items-center space-x-6">
             <ThemeToggle />
             <Button
+
               asChild
               className="bg-primary hover:bg-primary/90 text-text-primary-foreground px-6 py-2.5 font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
