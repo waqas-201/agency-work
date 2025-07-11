@@ -31,7 +31,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-background-emphasis text-text-primary-foreground">
+    <footer className="bg-[#0b132b] text-background">
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Top Section */}
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
@@ -40,7 +40,7 @@ export function Footer() {
             <Link href="/" className="flex items-center space-x-3 mb-6">
               <Image
 
-                src="/SRIXUS-LOGO-DARK  .svg"
+                src="/SRIXUS-LOGO-DARK.svg"
                 alt="Patient portal dashboard interface"
                 width={120}
                 height={80}
