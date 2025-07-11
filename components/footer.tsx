@@ -1,20 +1,19 @@
 import Link from "next/link"
 import { Twitter, Linkedin, Github, Mail, Phone, MapPin, Shield, Award, Clock } from "lucide-react"
-import Logo from "./Logo"
 import Image from "next/image"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/SRIXUS -solutions" },
-    { name: "Twitter", icon: Twitter, href: "https://twitter.com/SRIXUS solutions" },
-    { name: "GitHub", icon: Github, href: "https://github.com/SRIXUS -solutions" },
+    { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/srixus-solutions" },
+    { name: "Twitter", icon: Twitter, href: "https://twitter.com/srixus_solutions" },
+    { name: "GitHub", icon: Github, href: "https://github.com/srixus-solutions" },
   ]
 
   const contactInfo = [
     { icon: Phone, label: "Sales", value: "+1 (555) MED-TECH", href: "tel:+15556338324" },
-    { icon: Mail, label: "Inquiries", value: "healthcare@SRIXUS solutions.com", href: "mailto:healthcare@SRIXUS solutions.com" },
+    { icon: Mail, label: "Inquiries", value: "healthcare@srixus-solutions.com", href: "mailto:healthcare@srixus-solutions.com" },
     { icon: MapPin, label: "Location", value: "Medical District, TX", href: "/contact#locations" },
   ]
 
@@ -31,24 +30,22 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-[#0b132b] text-background">
+    <footer className="bg-[#0b132b] text-white border-t border-border text-foreground">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        {/* Top Section */}
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
-          {/* Company Info */}
+          {/* Logo & Description */}
           <div>
             <Link href="/" className="flex items-center space-x-3 mb-6">
               <Image
-
                 src="/SRIXUS-LOGO-DARK.svg"
-                alt="Patient portal dashboard interface"
+                alt="SRIXUS Logo"
                 width={120}
                 height={80}
                 className="max-w-full h-auto"
                 priority
               />
             </Link>
-            <p className="text-text-tertiary mb-6 leading-relaxed">
+            <p className=" leading-relaxed">
               Transforming healthcare with HIPAA-compliant solutions for patient portals, practice management, and telemedicine.
             </p>
           </div>
@@ -59,7 +56,10 @@ export function Footer() {
             <ul className="space-y-4">
               {contactInfo.map((contact, index) => (
                 <li key={index}>
-                  <a href={contact.href} className="flex items-center space-x-3 text-text-tertiary hover:text-text-primary-foreground">
+                  <a
+                    href={contact.href}
+                    className="flex items-center space-x-3 hover:text-primary"
+                  >
                     <contact.icon className="w-5 h-5" />
                     <div>
                       <div className="text-sm">{contact.label}</div>
@@ -92,12 +92,12 @@ export function Footer() {
                 <a
                   key={social.name}
                   href={social.href}
-                  className="w-10 h-10 bg-background-subtle rounded-full flex items-center justify-center hover:bg-primary"
+                  className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary"
                   aria-label={social.name}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <social.icon className="w-5 h-5 text-text-primary-foreground" />
+                  <social.icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
@@ -105,14 +105,18 @@ export function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border-subtle pt-8">
+        <div className="border-t border-border pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center">
-            <p className="text-text-tertiary text-center lg:text-left">
-              © {currentYear} SRIXUS  Solutions, Inc. All rights reserved.
+            <p className="text-sm text-center lg:text-left">
+              © {currentYear} SRIXUS Solutions, Inc. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 lg:mt-0">
               {legalLinks.map((link, index) => (
-                <Link key={index} href={link.href} className="text-text-tertiary hover:text-text-primary-foreground">
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="text-sm  hover:text-primary"
+                >
                   {link.name}
                 </Link>
               ))}
