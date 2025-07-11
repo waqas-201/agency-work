@@ -172,7 +172,7 @@ export function Header() {
                       </Link>
                   )}
 
-                  {item.dropdown && (
+                  {/* {item.dropdown && (
                     <div className="ml-4 mt-2 space-y-2">
                       {item.dropdown.map((dropdownItem, index) => (
                         <Link
@@ -185,18 +185,15 @@ export function Header() {
                         </Link>
                       ))}
                     </div>
-                  )}
+                  )} */}
                 </div>
               ))}
               <div className="pt-6 border-t border-border dark:border-border-subtle">
-                <div className="flex items-center text-sm text-text-secondary dark:text-text-tertiary mb-6">
-                  <Phone className="h-4 w-4 mr-2" />
-                  <span className="font-medium">+1 (555) MED-TECH</span>
-                </div>
+
                 <Button
                   asChild
                   className="w-full bg-primary hover:bg-primary/90 text-text-primary-foreground py-3 font-semibold"
-                >
+                > 
                   <a href="#contact" onClick={(e) => handleScroll(e, "#contact")}>
                     Free Consultation
                   </a>

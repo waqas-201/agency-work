@@ -7,7 +7,7 @@ export function HeroSection() {
   return (
     <section
       id="solutions"
-      className="relative pt-16 pb-16 bg-gradient-to-br from-background-subtle via-background to-background-subtle dark:from-background-emphasis dark:via-background-emphasis dark:to-background-subtle overflow-hidden"
+      className=" relative pt-16 pb-16 bg-gradient-to-br from-background-subtle via-background to-background-subtle dark:from-background-emphasis dark:via-background-emphasis dark:to-background-subtle overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-grid-gray-100 dark:bg-grid-gray-800 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(255,255,255,0.1),rgba(255,255,255,0.05))]" />
@@ -18,7 +18,7 @@ export function HeroSection() {
         <div className="w-56 h-56 sm:w-72 sm:h-72 bg-primary/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+      <div className="  md:mt-12 relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           {/* Content */}
           <div className="lg:col-span-7 xl:col-span-6">
