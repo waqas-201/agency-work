@@ -1,11 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import { MessageSquare, Lightbulb, Code, Rocket, ChevronDown, Clock, Users } from "lucide-react"
+import {
+  MessageSquare,
+  Lightbulb,
+  Code,
+  Rocket,
+  ChevronDown,
+  Clock,
+  Users,
+} from "lucide-react"
 import Image from "next/image"
 
 export function ProcessSection() {
-  const [activeStep, setActiveStep] = useState(0)
+  const [activeStep, setActiveStep] = useState<number | null>(null)
 
   const steps = [
     {
@@ -21,9 +29,11 @@ export function ProcessSection() {
         "Technical architecture for healthcare data handling",
       ],
       duration: "1-2 weeks",
-      deliverables: "Healthcare requirements, HIPAA compliance plan, integration roadmap",
+      deliverables:
+        "Healthcare requirements, HIPAA compliance plan, integration roadmap",
       image: "/placeholder.svg?height=300&width=400",
-      imageAlt: "Healthcare team meeting discussing patient portal requirements and workflows",
+      imageAlt:
+        "Healthcare team meeting discussing patient portal requirements and workflows",
     },
     {
       icon: Lightbulb,
@@ -38,7 +48,8 @@ export function ProcessSection() {
         "Compliance with healthcare regulations (HIPAA, GDPR)",
       ],
       duration: "2-3 weeks",
-      deliverables: "Design system, prototypes, security architecture, compliance documentation",
+      deliverables:
+        "Design system, prototypes, security architecture, compliance documentation",
       image: "/placeholder.svg?height=300&width=400",
       imageAlt: "Designer working on user interface mockups and prototypes",
     },
@@ -55,9 +66,11 @@ export function ProcessSection() {
         "Cross-platform compatibility testing",
       ],
       duration: "4-8 weeks",
-      deliverables: "Fully functional application, test reports, compliance documentation",
+      deliverables:
+        "Fully functional application, test reports, compliance documentation",
       image: "/placeholder.svg?height=300&width=400",
-      imageAlt: "Developer coding on multiple monitors with clean, organized code",
+      imageAlt:
+        "Developer coding on multiple monitors with clean, organized code",
     },
     {
       icon: Rocket,
@@ -72,9 +85,11 @@ export function ProcessSection() {
         "Ongoing maintenance, security updates, and compliance monitoring",
       ],
       duration: "1 week + ongoing",
-      deliverables: "Live application, monitoring dashboard, support plan",
+      deliverables:
+        "Live application, monitoring dashboard, support plan",
       image: "/placeholder.svg?height=300&width=400",
-      imageAlt: "Successful project launch with analytics dashboard showing positive metrics",
+      imageAlt:
+        "Successful project launch with analytics dashboard showing positive metrics",
     },
   ]
 
@@ -96,65 +111,69 @@ export function ProcessSection() {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`group cursor-pointer transition-all duration-300 ${
-                  activeStep === index
+                onClick={() =>
+                  setActiveStep(activeStep === index ? null : index)
+                }
+                className={`group cursor-pointer transition-all duration-300 ${activeStep === index
                     ? "bg-background dark:bg-background-subtle shadow-lg border-primary/20"
                     : "bg-background-subtle dark:bg-background/50 hover:bg-background dark:hover:bg-background-subtle border-border dark:border-border-subtle"
-                } border rounded-xl overflow-hidden`}
+                  } border rounded-xl overflow-hidden`}
               >
                 <div className="p-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <div
-                        className={`relative flex-shrink-0 transition-all duration-300 ${
-                          activeStep === index ? "scale-110" : ""
-                        }`}
+                        className={`relative flex-shrink-0 transition-all duration-300 ${activeStep === index ? "scale-110" : ""
+                          }`}
                       >
                         <div
-                          className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
-                            activeStep === index ? "bg-primary text-white" : "bg-gray-100 dark:bg-gray-700 text-primary"
-                          }`}
+                          className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${activeStep === index
+                            ? "bg-primary text-white"
+                            : "bg-gray-100 dark:bg-gray-700 text-primary"
+                            }`}
                         >
                           <step.icon className="h-6 w-6" />
                         </div>
                         <div
-                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${
-                            activeStep === index
+                          className={`absolute -top-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-300 ${activeStep === index
                               ? "bg-primary text-white"
                               : "bg-gray-200 dark:bg-gray-600 text-gray-600 dark:text-gray-300"
-                          }`}
+                            }`}
                         >
                           {index + 1}
                         </div>
                       </div>
                       <div className="flex-1">
                         <h3
-                          className={`text-lg font-semibold transition-colors duration-300 ${
-                            activeStep === index ? "text-primary" : "text-text-primary dark:text-text-primary"
-                          }`}
+                          className={`text-lg font-semibold transition-colors duration-300 ${activeStep === index
+                            ? "text-primary"
+                            : "text-text-primary dark:text-text-primary"
+                            }`}
                         >
                           {step.title}
                         </h3>
-                        <p className="text-text-secondary dark:text-text-tertiary text-sm">{step.subtitle}</p>
+                        <p className="text-text-secondary dark:text-text-tertiary text-sm">
+                          {step.subtitle}
+                        </p>
                       </div>
                     </div>
                     <ChevronDown
-                      className={`h-5 w-5 text-gray-400 transition-transform duration-300 ${
-                        activeStep === index ? "rotate-180 text-primary" : ""
-                      }`}
+                      className={`h-5 w-5 text-gray-400 transition-transform duration-300 ${activeStep === index ? "rotate-180 text-primary" : ""
+                        }`}
                     />
                   </div>
                 </div>
 
                 {/* Accordion Content */}
                 <div
-                  className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                    activeStep === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                  }`}
+                  className={`transition-all duration-300 ease-in-out overflow-hidden ${activeStep === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                    }`}
                 >
                   <div className="px-6 pb-6 border-t border-border-subtle dark:border-border">
                     <div className="pt-6 space-y-4">
-                      <p className="text-text-secondary dark:text-text-secondary">{step.description}</p>
+                      <p className="text-text-secondary dark:text-text-secondary">
+                        {step.description}
+                      </p>
                       <div className="grid sm:grid-cols-2 gap-4">
                         <div>
                           <h4 className="font-medium text-text-primary dark:text-text-primary mb-2 flex items-center text-sm">
@@ -179,7 +198,9 @@ export function ProcessSection() {
                               <Clock className="h-4 w-4 mr-2 text-primary" />
                               Timeline
                             </h4>
-                            <p className="text-sm text-text-secondary dark:text-text-tertiary">{step.duration}</p>
+                            <p className="text-sm text-text-secondary dark:text-text-tertiary">
+                              {step.duration}
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -195,36 +216,46 @@ export function ProcessSection() {
             <div className="bg-background-subtle dark:bg-background rounded-2xl overflow-hidden border border-border dark:border-border-subtle">
               <div className="aspect-video relative">
                 <Image
-                  src={steps[activeStep]?.image || steps[0].image}
-                  alt={steps[activeStep]?.imageAlt || steps[0].imageAlt}
+                  src={steps[activeStep ?? 0]?.image}
+                  alt={steps[activeStep ?? 0]?.imageAlt}
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 text-text-primary-foreground">
-                  <h3 className="font-semibold">{steps[activeStep]?.title || steps[0].title}</h3>
-                  <p className="text-text-primary-foreground/90 text-sm">{steps[activeStep]?.subtitle || steps[0].subtitle}</p>
+                  <h3 className="font-semibold">
+                    {steps[activeStep ?? 0]?.title}
+                  </h3>
+                  <p className="text-text-primary-foreground/90 text-sm">
+                    {steps[activeStep ?? 0]?.subtitle}
+                  </p>
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-text-primary dark:text-text-primary mb-4">Project Timeline</h3>
+                <h3 className="text-xl font-semibold text-text-primary dark:text-text-primary mb-4">
+                  Project Timeline
+                </h3>
                 <div className="space-y-3">
                   {steps.map((step, index) => (
                     <div key={index} className="flex items-center">
                       <div
-                        className={`w-3 h-3 rounded-full mr-3 transition-colors duration-300 ${
-                          index <= activeStep ? "bg-primary" : "bg-border dark:bg-border-subtle"
-                        }`}
+                        className={`w-3 h-3 rounded-full mr-3 transition-colors duration-300 ${activeStep !== null && index <= activeStep
+                          ? "bg-primary"
+                          : "bg-border dark:bg-border-subtle"
+                          }`}
                       ></div>
                       <div className="flex-1">
                         <div
-                          className={`text-sm font-medium transition-colors duration-300 ${
-                            index === activeStep ? "text-primary" : "text-text-primary dark:text-text-primary"
-                          }`}
+                          className={`text-sm font-medium transition-colors duration-300 ${index === activeStep
+                            ? "text-primary"
+                            : "text-text-primary dark:text-text-primary"
+                            }`}
                         >
                           {step.title}
                         </div>
-                        <div className="text-xs text-text-secondary dark:text-text-tertiary">{step.duration}</div>
+                        <div className="text-xs text-text-secondary dark:text-text-tertiary">
+                          {step.duration}
+                        </div>
                       </div>
                     </div>
                   ))}

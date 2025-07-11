@@ -1,11 +1,12 @@
-"use client"
-
-import { useState } from "react"
-import { ChevronDown, HelpCircle, ArrowRight } from "lucide-react"
+import { HelpCircle, ArrowRight, ChevronDown } from "lucide-react"
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion"
 
 export function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0)
-
   const faqs = [
     {
       question: "Are your solutions HIPAA compliant?",
@@ -20,7 +21,7 @@ export function FAQSection() {
     {
       question: "How long does a patient portal take to develop?",
       answer:
-        "A basic patient portal typically takes 6-10 weeks, while comprehensive practice management systems take 12-16 weeks depending on features and integrations. We provide detailed timelines during our initial consultation.",
+        "A basic patient portal typically takes 6–10 weeks, while comprehensive practice management systems take 12–16 weeks depending on features and integrations. We provide detailed timelines during our initial consultation.",
     },
     {
       question: "Do you provide ongoing support for medical practices?",
@@ -30,7 +31,7 @@ export function FAQSection() {
     {
       question: "What's the cost for a healthcare web solution?",
       answer:
-        "Projects typically range from $15K-$75K depending on complexity and features. Patient portals start at $15K, practice management systems at $35K, and enterprise solutions are custom quoted based on your specific needs.",
+        "Projects typically range from $15K–$75K depending on complexity and features. Patient portals start at $15K, practice management systems at $35K, and enterprise solutions are custom quoted based on your specific needs.",
     },
   ]
 
@@ -50,42 +51,24 @@ export function FAQSection() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <Accordion type="single" collapsible className="flex w-full flex-col">
           {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${
-                openIndex === index
-                  ? "bg-background dark:bg-background-subtle border-primary/20 shadow-lg"
-                  : "bg-background/70 dark:bg-background-subtle/70 border-border dark:border-border-subtle hover:bg-background dark:hover:bg-background-subtle"
-              }`}
-            >
-              <button
-                className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-background-subtle/50 dark:hover:bg-background/50 transition-colors"
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-              >
-                <span className="font-medium text-text-primary dark:text-text-primary pr-4 text-lg">{faq.question}</span>
-                <ChevronDown
-                  className={`h-6 w-6 text-text-tertiary transition-transform duration-300 ${
-                    openIndex === index ? "rotate-180 text-primary" : ""
-                  }`}
-                />
-              </button>
-
-              <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  openIndex === index ? "max-h-48 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="px-8 pb-6 border-t border-border-subtle dark:border-border">
-                  <p className="pt-6 text-text-secondary dark:text-text-secondary leading-relaxed">{faq.answer}</p>
+            <AccordionItem key={index} value={`faq-${index}`} className="border rounded-2xl my-1">
+              <AccordionTrigger className="w-full py-4 px-6 text-left text-text-primary dark:text-text-primary group">
+                <div className="flex items-center">
+                  <ChevronDown className="h-5 w-5 text-text-tertiary transition-transform duration-200 group-data-[state=open]:rotate-180" />
+                  <div className="ml-3 text-lg font-medium">{faq.question}</div>
                 </div>
-              </div>
-            </div>
+              </AccordionTrigger>
+              <AccordionContent className="origin-top">
+                <p className="pl-10 pr-4 pb-4 text-text-secondary dark:text-text-secondary leading-relaxed">
+                  {faq.answer}
+                </p>
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
 
-        {/* Simple CTA */}
         <div className="text-center mt-16">
           <p className="text-text-secondary dark:text-text-secondary mb-6 text-lg">
             Still have questions about our healthcare solutions?
