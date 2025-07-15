@@ -115,7 +115,7 @@ export function ContactForm() {
       <Button
         type="submit"
         size="lg"
-        className="w-full bg-background-emphasis hover:bg-background-emphasis/90 text-text-primary-foreground py-4 font-medium"
+        className="w-full  text-text-primary-foreground py-4 font-medium bg-primary"
         disabled={isLoading}
       >
         {isLoading ? (
@@ -123,7 +123,7 @@ export function ContactForm() {
         ) : (
           <>
             Send message
-            <Send className="ml-2 h-4 w-4" />
+              <Send className="ml-2 h-4 w-4 " />
           </>
         )}
       </Button>
