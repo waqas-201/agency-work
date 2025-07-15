@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google"
+import { Poppins, Space_Grotesk, JetBrains_Mono } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -8,10 +8,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 import SmoothScroll from "@/providers/lenis-provider"
 import WhatsAppFloatingButton from "@/components/whastappBtn"
 
-const inter = Inter({
+const popins = Poppins({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
+  variable: "--font-poppins",
 })
 
 const spaceGrotesk = Space_Grotesk({
@@ -48,10 +48,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`scroll-smooth ${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} theme-healthcare`}
+      className={` max-h-100 overflow-y-auto
+w ${popins.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} theme-healthcare`}
       suppressHydrationWarning
     >
-      <body className="font-inter antialiased">
+      <body className="font-inter antialiased min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange={false}>
           <SmoothScroll />
           <Header />
@@ -64,5 +65,6 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
+
   )
 }
