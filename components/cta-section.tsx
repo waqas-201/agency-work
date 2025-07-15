@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function CTASection() {
   return (
-    <section className="lg:py-16 py-10 bg-gradient-to-br from-primary to-primary/90 text-text-primary-foreground relative overflow-hidden">
+    <section className="lg:py-20 py-10 bg-gradient-to-br from-primary to-primary/90 text-text-primary-foreground relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))]" />
 

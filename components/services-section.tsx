@@ -52,13 +52,13 @@ export function ServicesSection() {
   ]
 
   return (
-    <section id="services" className="lg:py-16 py-10 bg-background dark:bg-background-emphasis">
+    <section id="services" className="lg:py-20 py-1 bg-background dark:bg-background-emphasis">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-6">
-            {/* <Code className="w-4 h-4 mr-2" /> */}
-            {/* <span className="font-space-grotesk font-semibold">Our Services</span> */}
+            <Code className="w-4 h-4 mr-2" />
+            <span className="font-space-grotesk font-semibold">Our Services</span> 
           </div>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-space-grotesk font-bold text-text-primary dark:text-text-primary mb-6">
             Healthcare Web Solutions

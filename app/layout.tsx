@@ -6,6 +6,7 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import SmoothScroll from "@/providers/lenis-provider"
+import WhatsAppFloatingButton from "@/components/whastappBtn"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -56,6 +57,10 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <WhatsAppFloatingButton
+            phoneNumber="923020069611"
+            message="Hey! I’m interested in your services."
+          />
         </ThemeProvider>
       </body>
     </html>
