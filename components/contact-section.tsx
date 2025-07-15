@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-background-subtle dark:bg-background-subtle">
+    <section id="contact" className="lg:py-16 py-10 bg-background-subtle dark:bg-background-subtle">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:space-x-16">
           {/* Header */}

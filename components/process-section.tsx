@@ -94,7 +94,7 @@ export function ProcessSection() {
   ]
 
   return (
-    <section id="process" className="py-20 bg-background dark:bg-background-emphasis">
+    <section id="process" className="lg:py-16 py-10 bg-background dark:bg-background-emphasis">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-space-grotesk font-bold text-text-primary dark:text-text-primary mb-4">
