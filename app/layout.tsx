@@ -49,7 +49,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={` max-h-100 overflow-y-auto
-w ${popins.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} theme-healthcare`}
+w ${popins.variable} ${popins.variable} ${popins.variable} theme-healthcare`}
       suppressHydrationWarning
     >
       <body className="font-inter antialiased min-h-screen">
