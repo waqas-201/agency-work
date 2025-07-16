@@ -76,7 +76,7 @@ export function HeroSection() {
           </div>
 
           {/* Hero Visual */}
-          <div className="lg:col-span-5 xl:col-span-6 mt-8 lg:mt-0">
+          <div className="lg:col-span-5  hidden lg:block xl:col-span-6 mt-8 lg:mt-0">
             <div className="relative mx-auto max-w-md sm:max-w-lg lg:max-w-none">
               {/* Main Dashboard */}
               <div className="relative bg-background dark:bg-background-subtle rounded-2xl shadow-2xl border border-border dark:border-border-subtle overflow-hidden">

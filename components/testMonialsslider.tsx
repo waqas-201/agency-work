@@ -110,7 +110,7 @@ const testimonials = [
 export function CarouselForReviews() {
     return (
         <Carousel
-            className="w-full"
+            className="w-full "
             plugins={[
                 Autoplay({
                     delay: 4000,
@@ -119,7 +119,7 @@ export function CarouselForReviews() {
             ]}
             opts={{ loop: true }}
         >
-            <CarouselContent className="px-2">
+            <CarouselContent className="px-2 ">
                 {testimonials.map((testimonial, index) => (
                     <CarouselItem
                         key={index}
