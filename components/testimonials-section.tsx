@@ -1,5 +1,6 @@
 import { Star, Quote } from "lucide-react"
 import Image from "next/image"
+import { CarouselForReviews } from "./testMonialsslider"
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -48,41 +49,10 @@ export function TestimonialsSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-background-subtle dark:bg-background p-8 rounded-2xl border border-border dark:border-border-subtle relative"
-            >
-              <div className="absolute top-6 right-6">
-                <Quote className="h-8 w-8 text-primary/20" />
-              </div>
 
-              <div className="flex mb-6">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                ))}
-              </div>
 
-              <p className="text-text-secondary dark:text-text-secondary mb-8 leading-relaxed text-lg">"{testimonial.content}"</p>
+        <CarouselForReviews />
 
-              <div className="flex items-center">
-                <Image
-                  src={testimonial.avatar || "/placeholder.svg"}
-                  alt={testimonial.author}
-                  width={60}
-                  height={60}
-                  className="rounded-full mr-4"
-                />
-                <div>
-                  <div className="font-semibold text-text-primary dark:text-text-primary text-lg">{testimonial.author}</div>
-                  <div className="text-primary font-medium">{testimonial.role}</div>
-                  <div className="text-sm text-text-secondary dark:text-text-tertiary">{testimonial.practice}</div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   )

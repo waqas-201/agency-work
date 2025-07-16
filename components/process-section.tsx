@@ -105,7 +105,7 @@ export function ProcessSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-1  ">
           {/* Process Steps */}
           <div className="space-y-4">
             {steps.map((step, index) => (
@@ -212,7 +212,7 @@ export function ProcessSection() {
           </div>
 
           {/* Visual Content */}
-          <div className="lg:sticky lg:top-24">
+          {/* <div className="lg:sticky lg:top-24">
             <div className="bg-background-subtle dark:bg-background rounded-2xl overflow-hidden border border-border dark:border-border-subtle">
               <div className="aspect-video relative">
                 <Image
@@ -262,7 +262,7 @@ export function ProcessSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
